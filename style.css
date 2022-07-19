@@ -1,0 +1,334 @@
+/* font family cdn */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner&family=Finlandica:ital,wght@1,600&family=Gentium+Book+Plus:ital,wght@0,700;1,700&family=Open+Sans:wght@300&family=Poppins:wght@300;500&family=Raleway:wght@200&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins';
+    margin: 0%;
+    background-color: rgba(245, 245, 220, 0.349);
+}
+
+/* nav style start from here */
+
+.nav{
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+justify-content: space-around;
+margin-bottom: 40px;
+}
+.nav > .navLink > ul > li {
+    list-style-type: none;
+    list-style-position: inside;
+    float: left;
+    margin-left: 18px;
+}
+.nav > .navLink > ul > li > a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+.navIcon{
+    font-size: 30px;
+}
+/* nav style end from here */
+
+/* camera style start from here */
+.imageBorder{
+    border-radius: 50%;
+    border: 3px solid gray;
+    width: 340px;
+    padding: 50px;
+}
+.camDiv{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    justify-content: space-around;
+}
+.productTitle{
+    font-size: 28px;
+}
+.camText , .navTitle{
+    padding-left: 10px;
+}
+.camImage{
+    margin-left: 35px;
+    background-color: cyan;
+    border-radius: 50%;
+    height: 255px;
+    width: 260px;
+    justify-content: center;
+}
+.camera{
+    height: 255px;
+    width: 268px;
+    margin-left: -15px;
+}
+.productButton{
+    background: #E02C6D;
+    padding: 15px 15px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+}
+.fa-arrow-right{
+    margin-left: 18px;
+}
+button:hover{
+    cursor: pointer;
+}
+/* camera style end from here */
+
+/* company style start  */
+.companyImage{
+    margin: auto;
+    width: 80%;
+    margin-top: 60px;
+}
+.compayImagesHorizontal{
+    border: 1px solid gray;
+}
+.comImage{
+    margin-left: 30px;
+}
+/* company style end */
+
+/* product style start from here  */
+.prodectCollectionTitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.collectionMainDiv{
+margin-left: 80px;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 80%;
+margin: auto;
+}
+.collectionDiv{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    row-gap: 50px;
+    column-gap: 10px;
+}
+.collectionInfo{
+    box-shadow:  0 10px 15px;
+    padding: 15px;
+    width: 297px;
+    height: auto;
+    border-radius: 10px;
+    margin:0px 0px;
+    
+}
+.collectionImage{
+    height:178px;
+    width: 285px;
+    border-radius: 12px;
+    padding: 10px;
+    margin-left: -5px;
+}
+.productTitle{
+    color: gray;
+    font-size: 15px;
+}
+.starFiled{
+color: gold;
+}
+
+.seeMoreButton{
+    color: rgba(224, 44, 109, 0.87);
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* product style end from here  */
+
+/* feature style start */
+
+.featuredDiv{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-left: 60px;
+    width:80%;
+    margin-bottom: 70px;
+    margin: auto;
+}
+
+.featureButton{
+    border: none;
+    padding: 12px;
+    color: white;
+    background: #E02C6D;
+    margin-top: 28px;
+    font-size: 25px;
+}
+
+/* footer style start from here  */
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 170px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footerIcon{
+   display: flex;
+  color: white;
+  justify-content: center;
+}
+.icon{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.icondiv{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.icondiv > a {
+    text-decoration: none;
+    color: white;
+}
+
+/*--------------------------
+ rwd start from here 
+ ---------------------------*/
+
+/* laptop devices */
+@media(max-width:1200px) {
+    .camDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+  
+    .collectionDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featuredDiv{
+        display: flex;
+         flex-direction: column-reverse; /* flex => flex dirction  , justify content*/
+         justify-content: center;
+        }
+    .footer{
+        padding: 0px;
+        width: 100%;
+    }
+    .imageBorder{
+        border: 2px solid lime;
+    }
+
+}
+
+/* tablet devices */
+@media(max-width:1000px) {
+    .nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navTitle , .navLink{
+        text-align: center;
+    }
+    .camDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+  
+    .collectionDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin-left: 20%;
+    }
+    .featuredDiv{
+        display: flex;
+         flex-direction: column-reverse; /* flex => flex dirction  , justify content*/
+         justify-content: center;
+        }
+    .footer{
+        padding: 0px;
+        width: 100%;
+    }
+    .imageBorder{
+        border: none;
+    }
+}
+
+/* big mobile devices */
+
+@media(max-width:800px) {
+    .nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navTitle , .navLink{
+        text-align: center;
+    }
+    .camDiv{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .collectionDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featuredDiv{
+        display: flex;
+         flex-direction: column-reverse; /* flex => flex dirction  , justify content*/
+         justify-content: center;
+         }
+    .footer{
+        padding: 0px;
+        width: 100%;
+    }
+    .imageBorder{
+        border: none;
+    }
+
+}
+/* mobile devices */
+@media(max-width:500px) {
+    .nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navTitle , .navLink{
+        text-align: center;
+    }
+    .camDiv{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .collectionDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featuredDiv{
+        display: flex;
+         flex-direction: column-reverse; /* flex => flex dirction  , justify content*/
+    }
+    .footer{
+        padding: 0px;
+        width: 100%;
+    }
+    .imageBorder{
+        border: none;
+    }
+}
+/*------------------------------
+rwd end from here 
+-------------------------------*/
