@@ -199,7 +199,7 @@ color: gold;
     text-decoration: none;
     color: white;
 }
-
+.nav2{display: none;}
 /*--------------------------
  rwd start from here 
  ---------------------------*/
@@ -271,6 +271,7 @@ color: gold;
 /* big mobile devices */
 
 @media(max-width:800px) {
+
     .nav{
         display: flex;
         flex-direction: column-reverse;
@@ -302,9 +303,22 @@ color: gold;
 }
 /* mobile devices */
 @media(max-width:500px) {
+    /* nav link with icon */
+    .nav2{display: block; display: grid; grid-template-columns: repeat(2 , 1fr);}
+    .navHeadTitile{display: flex;}
+    .navHeadTitile>a{text-decoration: none; font-size: 25px; color: gray; margin-top: 20px;}
+    .nav-link> ul > li > a{text-decoration: none; color: gray; margin-top: 25px;}
+    .nav-link> ul > li{list-style-type: none; list-style-position: inside;}
+    .nav-link{ background-color: lime; height: auto; width: 210px; display: none ; font-size: 18px;}
+    .barIcon:hover > .nav-link{
+    display: block;
+    transition-duration: 2s;
+    }
+    /* end here */
     .nav{
-        display: flex;
-        flex-direction: column-reverse;
+        /* display: flex;
+        flex-direction: column-reverse; */
+        display: none;
     }
     .navTitle , .navLink{
         text-align: center;
